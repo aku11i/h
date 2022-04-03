@@ -1,19 +1,25 @@
 # h
 
-Commonize the commands which show documentation.
+CLI tool that commonizes the commands which show documentation.
 
-## Why
+## About
 
 There are so many CLI tools in the world, and they have different methods for printing documentation.
 
 For example:
 
 - `man <command>`
-- `<command> [...subcommand] --help`
 - `<command> help [...subcommand]`
+- `<command> [...subcommand] --help`
 - `<command> [...subcommand] help` (It's rare case. I only know aws-cli.)
 
 `h` does commonize them to `h <command> [...subcommand]` .
+
+## How does it work
+
+Execute above help commands orderly until exits successfully.
+
+Some commands that have defferent pattern like aws-cli are handled specially.
 
 ## Install
 
@@ -24,7 +30,7 @@ npm install --global @aku11i/h
 ## Usage
 
 ```sh
-h <command> [<args>]
+h <command> [...subcommand]
 ```
 
 Examples:
