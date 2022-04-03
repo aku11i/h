@@ -15,6 +15,14 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  const { code } = await h(command, args);
-  process.exit(code);
+  try {
+    const { code } = await h(command, args);
+    process.exit(code);
+  } catch (e) {
+    if ((e as any)?.code === "ENOENT") {
+      console.error(`Command "${command}" is not found.`);
+      process.exit(1);
+    }
+    throw e;
+  }
 }
