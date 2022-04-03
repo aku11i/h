@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/aku11i/h/compare/v0.0.3...v0.0.4) (2022-04-03)
+
+
+### Bug Fixes
+
+* Disable incremental build ([bff0a4b](https://github.com/aku11i/h/commit/bff0a4b0f0ef3da85949de75b3d83cf3a71eb6ce))
+
 ### [0.0.3](https://github.com/aku11i/h/compare/v0.0.2...v0.0.3) (2022-04-03)
 
 ### 0.0.2 (2022-04-03)
