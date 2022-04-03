@@ -42,7 +42,7 @@ h aws s3
 
 ### I want to know which command is executed.
 
-````sh
+```sh
 NODE_ENV=development h <command> [...subcommand]
 ```
 
@@ -52,4 +52,4 @@ NODE_ENV=development h <command> [...subcommand]
 git clone https://github.com/aku11i/h
 npm install
 npm run --silent dev -- <command> [...subcommand]
-````
+```
