@@ -11,7 +11,7 @@ async function main(): Promise<void> {
   const [, , command, ...args] = process.argv;
 
   if (!command) {
-    console.error("usage: h <command> [<args>]");
+    console.error("usage: h <command> [...subcommand]");
     process.exit(1);
   }
 
