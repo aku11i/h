@@ -11,8 +11,13 @@ async function main(): Promise<void> {
   const [, , command, ...args] = process.argv;
 
   if (!command) {
-    console.error("usage: h <command> [...subcommand]");
+    printHelp();
     process.exit(1);
+  }
+
+  if (["-h", "--help", "help"].includes(command)) {
+    printHelp();
+    process.exit(0);
   }
 
   try {
@@ -25,4 +30,14 @@ async function main(): Promise<void> {
     }
     throw e;
   }
+}
+
+function printHelp() {
+  const helpText = [
+    "usage:",
+    "  h <command> [...subcommand]            : Execute help for the command",
+    "  h [-h, --help, help]                   : Show this help.",
+  ].join("\n");
+
+  console.log(helpText);
 }
