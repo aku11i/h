@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { createRequire } from "module";
 import { h } from "./h.js";
 import { log } from "./utils/logger.js";
 
@@ -17,6 +18,11 @@ async function main(): Promise<void> {
 
   if (["-h", "--help", "help"].includes(command)) {
     printHelp();
+    process.exit(0);
+  }
+
+  if (["-v", "--version"].includes(command)) {
+    printVersion();
     process.exit(0);
   }
 
@@ -40,4 +46,10 @@ function printHelp() {
   ].join("\n");
 
   console.log(helpText);
+}
+
+function printVersion() {
+  const require = createRequire(import.meta.url);
+  const { version } = require("../package.json");
+  console.log(`h version ${version}`);
 }
