@@ -1,6 +1,6 @@
 {
   "name": "@aku11i/h",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "commonize the commands which show documentation",
   "bin": {
     "h": "dist/bin.js"

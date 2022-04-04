@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/aku11i/h/compare/v0.0.5...v0.0.6) (2022-04-04)
+
+
+### Features
+
+* Add version options ([375f3c1](https://github.com/aku11i/h/commit/375f3c16261eabc6e49d73342ee17a37919c3b75))
+
 ### [0.0.5](https://github.com/aku11i/h/compare/v0.0.4...v0.0.5) (2022-04-04)
 
 
